@@ -1,0 +1,321 @@
+body {
+  font-family: "Jost";
+  margin: 0;
+}
+
+/* SECTION HEADER */
+.mdf-section-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.mdf-section-title {
+  font-weight: bold;
+  font-size: 5vh;
+  position: absolute;
+  color: #f36e25;
+  margin-top: 25px;
+  z-index: 20;
+}
+
+.mdf-section-title-bg {
+  font-weight: bold;
+  font-size: 9vh;
+  margin-left: 25px;
+  width: 100%;
+}
+
+.mdf-section-info {
+  display: flex;
+  align-items: start;
+  justify-items: center;
+  align-items: center;
+}
+
+.mdf-section-line {
+  border: 1px solid #f36c25;
+  width: 12vw;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.mdf-web-section-info-para {
+  max-width: 345px;
+  font-size: 2vh;
+  color: #f6862c;
+  font-weight: 550;
+  width: 60%;
+}
+
+.mdf-mobile-section-info-para {
+  display: none;
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  .mdf-section-title-bg {
+    font-family: "Be Vietnam Pro";
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+    opacity: 0.3;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 900px) {
+  .mdf-web-section-info-para {
+    display: none;
+  }
+  .mdf-section-line {
+    display: none;
+  }
+  .mdf-mobile-section-info-para {
+    display: block;
+    font-size: 2vh;
+    color: #f6862c;
+    font-weight: 550;
+    width: 70%;
+  }
+  .mdf-section-title-bg {
+    font-size: 9vw;
+  }
+  .mdf-section-title {
+    font-size: 5vw;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mdf-mobile-section-info-para {
+    font-size: 3vw;
+  }
+  .mdf-section-title-bg {
+    font-size: 8vw;
+  }
+  .mdf-section-header {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mdf-section-title {
+    font-size: 5vw;
+    margin-top: 5px;
+  }
+}
+
+/* WHY US SECTION */
+.whyUs-info {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 50%);
+  align-items: start;
+}
+
+.whyUs-info-card {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  max-width: 40vw;
+  margin: 30px;
+  margin-top: 0;
+}
+
+.whyUs-info-icon {
+  width: 140px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.whyUs-info-title {
+  font-size: 3vh;
+  font-weight: 900;
+  color: #f6862c;
+}
+
+.whyUs-info-para {
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .whyUs-info-card {
+    padding: 0;
+  }
+
+  .whyUs-info-icon {
+    width: 100px;
+  }
+  .whyUs-info-title {
+    font-size: 2.2vh;
+  }
+  .whyUs-info-para {
+    font-size: 1.8vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .whyUs-info {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .whyUs-info-card {
+    max-width: 80%;
+    margin: 10px;
+    margin-top: 0;
+  }
+
+  .whyUs-info-icon {
+    width: 14vw;
+  }
+  .whyUs-info-title {
+    font-size: 3.3vw;
+  }
+  .whyUs-info-para {
+    font-size: 2.8vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .whyUs-info-title {
+    font-size: 3.3vw;
+  }
+  .whyUs-info-para {
+    font-size: 3.2vw;
+  }
+}
+
+/* WHAT DO WE DO SECTION */
+.mdf-section-info-para {
+  font-size: 2vh;
+  color: #f6862c;
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+.whatWeDo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.whatWeDo-mac {
+  width: 35vw;
+  margin-left: 0px;
+}
+
+.whatWeDo-phn {
+  margin-top: 50px;
+  width: 16vw;
+  margin-left: 0px;
+}
+
+.whatWeDo-info {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-right: 10%;
+}
+
+.whatWeDo-card {
+  margin: 30px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(243, 108, 37, 0.22);
+  padding: 10px;
+  border-radius: 25px;
+  width: 220px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.whatWeDo-icon {
+  width: 90px;
+  margin-top: 20px;
+}
+
+.whatWeDo-card-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 3vh;
+  font-weight: bold;
+  color: #f6862c;
+}
+
+.whatWeDo-card-para {
+  font-size: 1.6vh;
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+  margin: 20px;
+}
+
+@media (max-width: 1200px) {
+  .whatWeDo-info {
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .whatWeDo {
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+  }
+  .whatWeDo-phn {
+    display: none;
+  }
+  .whatWeDo-mac {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .mdf-section-info-para {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .whatWeDo-card {
+    margin: 15px;
+    padding: 10px;
+    width: 35vw;
+  }
+
+  .whatWeDo-icon {
+    width: 12vw;
+  }
+
+  .whatWeDo-card-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3vh;
+    font-weight: bold;
+    color: #f6862c;
+  }
+
+  .whatWeDo-card-para {
+    font-size: 1.6vh;
+    font-weight: bold;
+    text-align: center;
+    height: 100%;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .whatWeDo-card {
+    margin: 8px;
+    padding: 0;
+    width: 40vw;
+  }
+
+  .whatWeDo-card-para {
+    font-size: 2.5vw;
+  }
+  .whyUs-info-icon {
+    width: 20vw;
+  }
+}
